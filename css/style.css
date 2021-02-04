@@ -16,6 +16,7 @@ body {
     position: relative;
     border: none;
 }
+
 header{
     position: absolute;
     width: 100%;
@@ -40,9 +41,13 @@ header{
 
 .navbar-my ul li a{
     color: #fff;
+    padding: 10px!important;
+
 }
 .navbar-my ul li a:hover{
     color: #333;
+    transition: 1s;
+    padding: 10px;
 
 }
 .navbar-my ul li a{
@@ -59,80 +64,65 @@ header{
 .navbar-my .active{
     border-bottom: 1px solid #878787;
 }
-.about_me{
-    margin-bottom: 130px;
+.about-me{
     margin-top: 130px;
+    margin-bottom: 40px;
 }
-.about_me img{
+.about-me img{
     width: 100%;
     display: block;
 }
 .main h1 {
     font: 90px/90px 'Asap';
 }
-.know_more{
+.know-more{
     position: absolute;
     top:40%;
     left:8%;
+    right:8%;
+    max-width: 600px;
 }
-.know_more p{
+.know-more p{
     font: 22px/22px 'Asap';
     color: #4d4d4d;
     margin-bottom: 30px;
 }
-.know_more a{
+.key{
     border: 1px solid #4d4d4d;
     font: 16px/16px 'Asap';
     color: #4d4d4d;
-    padding: 20px 47px;
+    padding: 20px 20px;
     display: inline-block;
     text-transform: uppercase;
+    transition: 2s;
 }
-.know_more a:hover{
+.key:hover{
     text-decoration: none;
-    border: none;
-    background-color: #FFFFFF;
-    -webkit-box-shadow: 3px 26px 30px -6px rgba(34, 60, 80, 0.12);
-    -moz-box-shadow: 3px 26px 30px -6px rgba(34, 60, 80, 0.12);
-    box-shadow: 3px 26px 30px -6px rgba(34, 60, 80, 0.12);
-}
-.about_me h2 {
-    font: bold 46px/46px 'Asap';
+    background-color: gray;
 
 }
-.about_me p{
+.but{
+    max-width: 100%;
+}
+h2 {
+    font: bold 46px/46px 'Asap';
+    margin-bottom: 70px;
+    text-align: center;
+
+}
+.about-me p{
     font:16px/25px 'Asap';
 }
-.about_me a{
-    font: 16px/16px 'Asap';
-    color: #4d4d4d;
-    text-transform: uppercase;
-    border: 1px solid #4d4d4d;
-    padding: 20px 47px;
-    display: inline-block;
-    margin-top: 30px;
-}
-.about_me a:hover{
-    text-decoration: none;
-    border: none;
-    background-color: #FFFFFF;
-    -webkit-box-shadow: 3px 26px 30px -6px rgba(34, 60, 80, 0.12);
-    -moz-box-shadow: 3px 26px 30px -6px rgba(34, 60, 80, 0.12);
-    box-shadow: 3px 26px 30px -6px rgba(34, 60, 80, 0.12);
-}
+
 .service{
     background-color: #f6f6f6;
     text-align: center;
     padding-top: 148px;
-    padding-bottom: 80px;
+
 
 }
-.service h2{
-    font: bold 46px/46px 'Asap';
-    color: #4d4d4d;
-    margin-bottom: 70px;
-}
-.service h2:before{
+
+h2:before{
     content: "";
     display: block;
     background-color: #767676;
@@ -147,26 +137,20 @@ header{
 .skills{
     text-align: center;
     margin-top: 115px;
-    margin-bottom: 125px;
+    margin-bottom: 30px;
 }
-.skills h2{
-    font: bold 46px/46px 'Asap';
-    color: #4d4d4d;
-    margin-bottom: 70px;
-}
-.skills h2:before{
-    content: "";
-    display: block;
-    background-color: #767676;
-    width: 60px;
-    margin: auto;
-    margin-bottom: 20px;
-    height: 4px;
-}
+
 .skills img{
     width: 100%;
     display: block;
 }
+.scale{
+    transition: 1s;
+}
+.scale:hover {
+    transform: scale(1.2);
+}
+
 .portfolio {
     background-color: #f6f6f6;
     padding-top: 127px;
@@ -177,54 +161,18 @@ header{
     width: 100%;
     display: block;
 }
-.portfolio h2{
-    margin-bottom: 47px;
-    font: bold 46px/46px 'Asap';
-    color: #4d4d4d;
-}
-.portfolio h2:before{
-    content: "";
-    display: block;
-    background-color: #767676;
-    width: 60px;
-    margin: auto;
-    margin-bottom: 20px;
-    height: 4px;
-}
-.portfolio a{
-    padding: 20px 47px;
-    background-color: #ffffff;
-    font: 16px/16px 'Asap';
-    color: #4d4d4d;
-    display: inline-block;
-    -webkit-box-shadow: 3px 26px 30px -6px rgba(34, 60, 80, 0.12);
-    -moz-box-shadow: 3px 26px 30px -6px rgba(34, 60, 80, 0.12);
-    box-shadow: 3px 26px 30px -6px rgba(34, 60, 80, 0.12);
-}
+
 .portfolio .col-sm-4{
     padding-bottom: 30px;
 }
-.testimonials h2{
-    text-align: center;
-    font: bold 46px/46px 'Asap';
-    margin-bottom: 55px;
-}
-.testimonials h2:before{
-    content: "";
-    display: block;
-    background-color: #767676;
-    width: 60px;
-    margin: auto;
-    margin-bottom: 20px;
-    height: 4px;
-}
+
 .testimonials h3{
     font: 30px/30px 'Asap';
     text-transform: uppercase;
+    margin-top: 0;
 }
 .testimonials{
     font: italic 12px/12px 'Asap';
-    padding-bottom: 120px;
     padding-top: 120px;
 
 }
@@ -234,10 +182,10 @@ header{
 .testimonials p{
     font: 16px/16px 'Asap';
     margin-top: 20px;
+    line-height: 25px;
 }
 .owl-carousel{
-    border: 1px solid #000000;
-    padding: 80px 60px 110px 120px;
+    padding: 0px 60px 110px 90px;
 }
 .owl-dot:focus {
     outline: none;
@@ -278,9 +226,21 @@ header{
     padding-top: 50px;
     padding-bottom: 65px;
     text-align: center;
-    margin-bottom: 110px;
+
 }
-.number{
+#number{
+    font: bold 30px/30px 'Asap';
+    margin-top: 30px;
+}
+#number1{
+    font: bold 30px/30px 'Asap';
+    margin-top: 30px;
+}
+#number2{
+    font: bold 30px/30px 'Asap';
+    margin-top: 30px;
+}
+#number3{
     font: bold 30px/30px 'Asap';
     margin-top: 30px;
 }
@@ -293,7 +253,8 @@ header{
 
             linear-gradient(to top, rgba(0,0,0,0.3), rgba(0,0,0,0.3)),
             url('../images/bg_form.png');
-    background-size: 100%;
+
+    background-size: cover;
     padding-top: 140px;
 }
 .btn-success{
@@ -313,36 +274,32 @@ form{
     border-bottom: 1px solid #ffffff;
     padding-bottom: 55px;
     text-align: center;
+    cursor:pointer;
 }
 
 .email{
     padding-left: 0;
     padding-right: 30px;
+    cursor:pointer;
 }
 .password{
     padding-left: 0;
     padding-right: 0;
+    cursor:pointer;
 }
-.form h2{
-    font: 46px/46px 'Asap';
-    margin-bottom: 70px;
-    color: #ffffff;
-    text-align: center;
-}
-.form h2:before{
-    content: "";
-    display: block;
-    background-color: #c1c1c1;
-    width: 60px;
-    margin: auto;
-    margin-bottom: 20px;
-    height: 4px;
-}
+
 textarea{
     resize: none;
+    cursor:pointer;
 }
 .form-control{
     border-radius: 0;
+    cursor:pointer;
+}
+.form-control:focus{
+    border-color: #CCCCCC;
+    outline: none;
+    box-shadow: none;
 }
 .btn-primary{
     background-color: #ffffff;
@@ -376,6 +333,7 @@ textarea{
 .social a:hover{
     background-color: #0084b4;
     color: #ffffff;
+    transition: 1s;
 }
 .social{
     display: inline-block;
@@ -407,6 +365,9 @@ textarea{
 
 }
 @media only screen and (max-width: 767px) {
+    h2 {
+        font-size: 30px;
+    }
 }
 @media only screen and (max-width: 420px) {
 
@@ -415,10 +376,10 @@ textarea{
     .main h1 {
         font: 45px/45px 'Asap';
     }
-    .know_more a{
+    .know-more a{
         margin-bottom: 20px;
     }
-    .about_me a{
+    .about-me a{
         margin-bottom: 20px;
     }
     .owl-carousel{
@@ -441,8 +402,7 @@ textarea{
     .navbar-toggle:before{
         content: "\f0c9";
         display: inline-block;
-        font: normal normal normal 14px/1 FontAwesome;
-        font-size: inherit;
+        font: 25px/25px FontAwesome;
         text-rendering: auto;
     }
     .navbar-nav{
@@ -451,9 +411,41 @@ textarea{
         padding-bottom: 20px;
 
     }
+    .navbar-my ul li a{
+        color: #2b669a;
+    }
+    .navbar-my ul li{
+        padding: 5px;
+    }
     .nav.navbar-nav.navbar-right a:hover{
         background-color: #FFFFFF;
     }
+    .navbar-toggle{
+        margin-top: 28px!important;
+    }
+    .know-more{
+        top:30%;
+    }
+    .about-me{
+        margin-top: 40px;
+    }
+    .service{
+        padding-top: 40px;
+    }
+    .skills{
+        margin-top: 40px;
+    }
+    .portfolio{
+        padding-top: 40px;
+    }
+    .testimonials{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+.portfolio .container{
+    margin-right: 15px;
+    margin-left: 15px;
+}
 }
 @media only screen and (max-width: 360px){
 
